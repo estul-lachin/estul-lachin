@@ -19,7 +19,7 @@ reset and redo at any time. The ones I have passed are listed at
 A hardened Cowrie SSH/Telnet honeypot on a VPS. Real attacks are mapped to MITRE ATT&CK,
 published hourly without IP addresses and summarized in weekly reports at
 **[honeypot.uig.me](https://honeypot.uig.me)** ([source](https://github.com/estul-lachin/uig-honeypot)).
-The raw logs feed a local Splunk with six scheduled
+The raw logs feed a local Splunk with AbuseIPDB reputation for every source and seven scheduled
 [detections](https://github.com/estul-lachin/uig-honeypot/blob/main/docs/detections.md).
 
 ## Contact

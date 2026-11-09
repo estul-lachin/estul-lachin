@@ -17,7 +17,7 @@ reset and redo at any time. The ones I have passed are listed at
 ## Live honeypot
 
 A hardened Cowrie SSH/Telnet honeypot on a VPS. Real attacks are mapped to MITRE ATT&CK,
-published hourly without IP addresses and summarized in weekly reports at
+streamed to Microsoft Sentinel, published hourly without IP addresses and summarized in weekly reports at
 **[honeypot.uig.me](https://honeypot.uig.me)** ([source](https://github.com/estul-lachin/uig-honeypot)).
 The raw logs feed a local Splunk with AbuseIPDB reputation for every source and seven scheduled
 [detections](https://github.com/estul-lachin/uig-honeypot/blob/main/docs/detections.md).
@@ -25,7 +25,8 @@ The raw logs feed a local Splunk with AbuseIPDB reputation for every source and 
 ## Detection-as-code
 
 Sigma rules for the attacks the honeypot sees, each tested in CI against attack and look-alike events,
-converted to Splunk SPL and Microsoft Sentinel KQL, and checked in a real Splunk. Browse them at
+converted to Splunk SPL and KQL, and verified in both Splunk and Microsoft Sentinel, where they run as
+hourly analytics rules on the live honeypot feed. Browse them at
 **[detections.uig.me](https://detections.uig.me)** ([source](https://github.com/estul-lachin/uig-detections)).
 
 ## Contact

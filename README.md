@@ -3,10 +3,10 @@
 IT support technician moving into security operations, based in Edmonton, AB.
 Everything I build is linked from **[uig.me](https://uig.me)**.
 
-- Four years of freelance IT support for small businesses: remote user support,
+- Three and a half years of freelance IT support for small businesses: remote user support,
   network troubleshooting, websites and cloud-hosted services
 - CompTIA Security+ · Google IT Support Professional Certificate
-- SOC analyst training: alert triage in Splunk and IBM QRadar, incident reports
+- SOC analyst: alert triage in Splunk and IBM QRadar, incident reports
 
 ## Hands-on labs
 

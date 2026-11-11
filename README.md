@@ -31,4 +31,4 @@ hourly analytics rules on the live honeypot feed. Browse them at
 
 ## Contact
 
-[uig.me](https://uig.me) · [LinkedIn](https://www.linkedin.com/in/estul-lachin)
+[hello@uig.me](mailto:hello@uig.me) · [uig.me](https://uig.me) · [LinkedIn](https://www.linkedin.com/in/estul-lachin)

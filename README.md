@@ -19,14 +19,16 @@ reset and redo at any time. The ones I have passed are listed at
 A hardened Cowrie SSH/Telnet honeypot on a VPS. Real attacks are mapped to MITRE ATT&CK,
 streamed to Microsoft Sentinel, published hourly without IP addresses and summarized in weekly reports at
 **[honeypot.uig.me](https://honeypot.uig.me)** ([source](https://github.com/estul-lachin/uig-honeypot)).
-The raw logs feed a local Splunk with AbuseIPDB reputation for every source and seven scheduled
-[detections](https://github.com/estul-lachin/uig-honeypot/blob/main/docs/detections.md).
+The raw logs also feed a local Splunk with AbuseIPDB reputation for every source and seven hand-written
+[Splunk searches](https://github.com/estul-lachin/uig-honeypot/blob/main/docs/detections.md) that pick out the
+sessions worth a closer look. These are separate from the Sigma rules below.
 
 ## Detection-as-code
 
-Sigma rules for the attacks the honeypot sees, each tested in CI against attack and look-alike events,
+17 Sigma rules (a vendor-neutral detection format) for the attacks the honeypot sees, each tested in CI against attack and look-alike events,
 converted to Splunk SPL and KQL, and verified in both Splunk and Microsoft Sentinel, where they run as
-hourly analytics rules on the live honeypot feed. Browse them at
+hourly analytics rules on the live honeypot feed. Incidents they raise are enriched, triaged and escalated
+automatically by SOAR playbooks. Browse them at
 **[detections.uig.me](https://detections.uig.me)** ([source](https://github.com/estul-lachin/uig-detections)).
 
 ## Contact

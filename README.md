@@ -5,7 +5,7 @@ Everything I build is linked from **[uig.me](https://uig.me)**.
 
 - Three and a half years of freelance IT support for small businesses: remote user support,
   network troubleshooting, websites and cloud-hosted services
-- CompTIA Security+ · Google IT Support Professional Certificate
+- [CompTIA Security+](https://www.credly.com/badges/0ad03319-76a9-4370-ad02-18248eb24f2d/public_url) · [Google IT Support Professional Certificate](https://www.credly.com/badges/922b8039-3667-49e6-b933-8e15fd46b0fe/public_url) (verified on Credly)
 - SOC analyst: alert triage in Splunk and IBM QRadar, incident reports
 
 ## Hands-on labs

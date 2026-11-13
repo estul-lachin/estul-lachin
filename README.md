@@ -31,6 +31,13 @@ hourly analytics rules on the live honeypot feed. Incidents they raise are enric
 automatically by SOAR playbooks. Browse them at
 **[detections.uig.me](https://detections.uig.me)** ([source](https://github.com/estul-lachin/uig-detections)).
 
+## SOC field guide
+
+Evidence that I work in Splunk, Microsoft Sentinel and Wazuh, on the honeypot's real data.
+The same investigation questions written in SPL, KQL and Wazuh's query language, run on the
+same day of data and checked against each other, at
+**[guide.uig.me](https://guide.uig.me)** ([source](https://github.com/estul-lachin/uig-guide)).
+
 ## Contact
 
 [hello@uig.me](mailto:hello@uig.me) · [uig.me](https://uig.me) · [LinkedIn](https://www.linkedin.com/in/estul-lachin)

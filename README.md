@@ -1,4 +1,4 @@
-# Hi, I'm Estul Lachin
+[![Estul Lachin, IT support moving into security operations, Edmonton AB. Sites: uig.me, lab.uig.me, honeypot.uig.me, detections.uig.me, guide.uig.me](assets/banner.png)](https://uig.me)
 
 IT support technician moving into security operations, based in Edmonton, AB.
 Everything I build is linked from **[uig.me](https://uig.me)**.

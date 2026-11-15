@@ -25,7 +25,7 @@ sessions worth a closer look. These are separate from the Sigma rules below.
 
 ## Detection-as-code
 
-17 Sigma rules (a vendor-neutral detection format) for the attacks the honeypot sees, each tested in CI against attack and look-alike events,
+18 Sigma rules (a vendor-neutral detection format) for the attacks the honeypot sees, each tested in CI against attack and look-alike events,
 converted to Splunk SPL and KQL, and verified in both Splunk and Microsoft Sentinel, where they run as
 hourly analytics rules on the live honeypot feed. Incidents they raise are enriched, triaged and escalated
 automatically by SOAR playbooks. Browse them at

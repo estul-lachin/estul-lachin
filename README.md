@@ -1,43 +1,46 @@
-[![Estul Lachin, IT support moving into security operations, Edmonton AB. Sites: uig.me, lab.uig.me, honeypot.uig.me, detections.uig.me, guide.uig.me](assets/banner.png)](https://uig.me)
+[![Estul Lachin, SOC analyst, Edmonton AB. uig.me: honeypots, detections, investigations, practice labs](assets/banner.png)](https://uig.me)
 
-IT support technician moving into security operations, based in Edmonton, AB.
-Everything I build is linked from **[uig.me](https://uig.me)**.
+SOC analyst in Edmonton, AB. I run two decoy servers on the internet, detect what attackers do on them and
+investigate each case the way a security operations team does. Everything is at **[uig.me](https://uig.me)**.
 
+- SOC analyst: alert triage in Splunk and IBM QRadar, phishing analysis, incident reports
 - Three and a half years of freelance IT support for small businesses: remote user support,
   network troubleshooting, websites and cloud-hosted services
 - [CompTIA Security+](https://www.credly.com/badges/0ad03319-76a9-4370-ad02-18248eb24f2d/public_url) · [Google IT Support Professional Certificate](https://www.credly.com/badges/922b8039-3667-49e6-b933-8e15fd46b0fe/public_url) (verified on Credly)
-- SOC analyst: alert triage in Splunk and IBM QRadar, incident reports
 
-## Hands-on labs
+## Start with one case
 
-Every skill I learn becomes a small Docker lab with automated checks that I can
-reset and redo at any time. The ones I have passed are listed at
-**[lab.uig.me](https://lab.uig.me)** ([source](https://github.com/estul-lachin/uig-lab)).
+**[INC-001: a botnet broke into my server and planted a cryptominer](https://uig.me/honeypot/inc-001.html)**.
+What the attackers did, what my alerts caught and missed, and why nothing got out.
+More in the [incident reports](https://uig.me/incidents/).
 
-## Live honeypot
+## Honeypots
 
-A hardened Cowrie SSH/Telnet honeypot on a VPS. Real attacks are mapped to MITRE ATT&CK,
-streamed to Microsoft Sentinel, published hourly without IP addresses and summarized in weekly reports at
-**[honeypot.uig.me](https://honeypot.uig.me)** ([source](https://github.com/estul-lachin/uig-honeypot)).
-The raw logs also feed a local Splunk with AbuseIPDB reputation for every source and seven hand-written
-[Splunk searches](https://github.com/estul-lachin/uig-honeypot/blob/main/docs/detections.md) that pick out the
-sessions worth a closer look. These are separate from the Sigma rules below.
+A hardened Cowrie SSH/Telnet honeypot on a VPS, and a real Debian server with a bait account and all outbound
+traffic blocked. Attacks are mapped to MITRE ATT&CK, streamed to Microsoft Sentinel, published hourly without IP
+addresses and summarized in weekly reports at
+**[uig.me/honeypot](https://uig.me/honeypot/)** ([source](https://github.com/estul-lachin/honeypot)).
 
-## Detection-as-code
+## Detections
 
-18 Sigma rules (a vendor-neutral detection format) for the attacks the honeypot sees, each tested in CI against attack and look-alike events,
-converted to Splunk SPL and KQL, and verified in both Splunk and Microsoft Sentinel, where they run as
-hourly analytics rules on the live honeypot feed. Incidents they raise are enriched, triaged and escalated
-automatically by SOAR playbooks. Browse them at
-**[detections.uig.me](https://detections.uig.me)** ([source](https://github.com/estul-lachin/uig-detections)).
+18 Sigma rules (a vendor-neutral detection format) for the attacks the honeypot sees, each tested in CI against
+attack and look-alike events, converted to Splunk SPL and KQL, and verified in both Splunk and Microsoft Sentinel,
+where they run as analytics rules on the live honeypot feed. SOAR playbooks enrich, triage and escalate the
+incidents they raise. Browse them at
+**[uig.me/detections](https://uig.me/detections/)** ([source](https://github.com/estul-lachin/detections)).
 
-## SOC field guide
+## Investigations
 
-Evidence that I work in Splunk, Microsoft Sentinel and Wazuh, on the honeypot's real data.
-The same investigation questions written in SPL, KQL and Wazuh's query language, run on the
-same day of data and checked against each other, at
-**[guide.uig.me](https://guide.uig.me)** ([source](https://github.com/estul-lachin/uig-guide)).
+Cases I investigated and the playbooks I use, with the same questions written in SPL, KQL and Wazuh's query
+language, run on the same day of data and checked against each other, at
+**[uig.me/investigations](https://uig.me/investigations/)** ([source](https://github.com/estul-lachin/investigations)).
+
+## Practice labs
+
+Every skill I learn becomes a small Docker lab with automated checks that I can reset and redo at any time.
+The ones I have passed are listed at
+**[uig.me/labs](https://uig.me/labs/)** ([source](https://github.com/estul-lachin/labs)).
 
 ## Contact
 
-[hello@uig.me](mailto:hello@uig.me) · [uig.me](https://uig.me) · [LinkedIn](https://www.linkedin.com/in/estul-lachin)
+[hello@uig.me](mailto:hello@uig.me) · [uig.me](https://uig.me) · [LinkedIn](https://www.linkedin.com/in/estul-lachin) · [Résumé (PDF)](https://uig.me/Estul-Lachin-Resume.pdf)

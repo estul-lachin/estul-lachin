@@ -10,9 +10,9 @@ investigate each case the way a security operations team does. Everything is at 
 
 ## Start with one case
 
-**[INC-001: a botnet broke into my server and planted a cryptominer](https://uig.me/honeypot/inc-001.html)**.
+**[INC-001: a botnet broke into my server and planted a cryptominer](https://uig.me/writing/inc-001/)**.
 What the attackers did, what my alerts caught and missed, and why nothing got out.
-More in the [incident reports](https://uig.me/incidents/).
+More incident reports, investigations and notes in [Writing](https://uig.me/writing/).
 
 ## Honeypots
 
